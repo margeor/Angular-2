@@ -1,0 +1,22 @@
+{
+    "version": "1.5.0",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true
+    },
+    "filesGlob": [
+        "./lessons/**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./lessons/angular2_L01/main.ts",
+        "./lessons/angular2_L02/main.ts",
+        "./lessons/angular2_L03/main.ts",
+        "./lessons/angular2_L04/main.ts"
+    ]
+}

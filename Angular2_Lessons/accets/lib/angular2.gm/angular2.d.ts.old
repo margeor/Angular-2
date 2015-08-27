@@ -1,0 +1,199 @@
+// Type definitions for Angular sha 390cfb793b2cd351d2db609d088a8fdda3df4f24
+// Project: http://angular.io/
+// Definitions by: angular team <https://github.com/angular/>
+// Definitions: https://github.com/borisyankov/DefinitelyTyped
+
+/******************
+ * This is a minimal type definition for the Angular2 quickstart.
+ * We plan to publish a complete definition soon.
+ ******************/
+
+interface List<T> extends Array<T> {}
+interface Type {}
+
+interface _ComponentArg {
+  selector: string;
+
+  properties?: Object;
+  hostListeners?: Object;
+
+  injectables?: List<any>;
+  lifecycle?: List<any>;
+
+  changeDetection?: string;
+}
+
+interface _ViewArg {
+  templateUrl?: string;
+  template?: string;
+  directives?: List<Type>;
+  formatters?: List<Type>;
+  source?: List<any>;
+  locale?: string;
+  device?: string;
+}
+
+declare module "angular2/angular2" {
+  function bootstrap(appComponentType: any): void;
+
+  function Component(arg: _ComponentArg): (target: any) => any;
+
+  function View(arg: _ViewArg): (target: any) => any;
+
+
+  function NgFor(): void;
+
+
+  function NgIf(): void;
+
+
+  function NgNonBindable(): void;
+
+
+  function NgSwitch(): void;
+  var Observable: any;
+  var EventEmitter: any;
+  var DomRenderer: any;
+  var DOCUMENT_TOKEN: any;
+  var ASTWithSource: any;
+  var AST: any;
+  var AstTransformer: any;
+  var AccessMember: any;
+  var LiteralArray: any;
+  var ImplicitReceiver: any;
+  var Lexer: any;
+  var Parser: any;
+  var Locals: any;
+  var ExpressionChangedAfterItHasBeenChecked: any;
+  var ChangeDetectionError: any;
+  var ProtoChangeDetector: any;
+  var ChangeDispatcher: any;
+  var ChangeDetector: any;
+  var ChangeDetection: any;
+  var CHECK_ONCE: any;
+  var CHECK_ALWAYS: any;
+  var DETACHED: any;
+  var CHECKED: any;
+  var ON_PUSH: any;
+  var DEFAULT: any;
+  var DynamicProtoChangeDetector: any;
+  var JitProtoChangeDetector: any;
+  var BindingRecord: any;
+  var DirectiveIndex: any;
+  var DirectiveRecord: any;
+  var DynamicChangeDetector: any;
+  var ChangeDetectorRef: any;
+  var PipeRegistry: any;
+  var uninitialized: any;
+  var WrappedValue: any;
+  var Pipe: any;
+  var NullPipe: any;
+  var NullPipeFactory: any;
+  var defaultPipes: any;
+  var DynamicChangeDetection: any;
+  var JitChangeDetection: any;
+  var defaultPipeRegistry: any;
+  var ___esModule: any;
+  var ViewRef: any;
+  var ProtoViewRef: any;
+  var ViewContainerRef: any;
+  var ElementRef: any;
+  var AncestorAnnotation: any;
+  var ParentAnnotation: any;
+  interface OnChange {}
+  var ViewAnnotation: any;
+  interface ApplicationRef {}
+  var appComponentRefToken: any;
+  var appComponentAnnotatedTypeToken: any;
+  var QueryAnnotation: any;
+  var AttributeAnnotation: any;
+  interface QueryList {}
+  interface CompilerCache {}
+  interface Compiler {}
+  interface TemplateLoader {}
+  interface ShadowDomStrategy {}
+  interface NativeShadowDomStrategy {}
+  interface EmulatedScopedShadowDomStrategy {}
+  interface EmulatedUnscopedShadowDomStrategy {}
+  interface ComponentRef {}
+  interface DynamicComponentLoader {}
+  var ComponentAnnotation: any;
+  var DirectiveAnnotation: any;
+  var onDestroy: any;
+  var onChange: any;
+  var onAllChangesDone: any;
+  var Directive: any;
+  var Ancestor: any;
+  var Parent: any;
+  var Attribute: any;
+  var Query: any;
+  var coreDirectives: any;
+  interface CSSClass {}
+  interface NgSwitchWhen {}
+  interface NgSwitchDefault {}
+  var VALID: any;
+  var INVALID: any;
+  interface Control {}
+  interface ControlGroup {}
+  interface ControlArray {}
+  interface DefaultValueAccessor {}
+  interface CheckboxControlValueAccessor {}
+  interface ControlDirective {}
+  interface ControlGroupDirective {}
+  var formDirectives: any;
+  interface Validators {}
+  interface RequiredValidatorDirective {}
+  interface FormBuilder {}
+  interface EventBinding {}
+  interface ElementBinder {}
+  interface DirectiveBinder {}
+  interface ProtoViewDto {}
+  interface DirectiveMetadata {}
+  interface RenderProtoViewRef {}
+  interface RenderViewRef {}
+  interface ViewDefinition {}
+  interface RenderCompiler {}
+  interface Renderer {}
+  interface EventDispatcher {}
+}
+
+declare module "angular2/di" {
+  function bind(token: any): any;
+  var Injector: any;
+  var Binding: any;
+  var ResolvedBinding: any;
+  var Dependency: any;
+  var Key: any;
+  var KeyRegistry: any;
+  var TypeLiteral: any;
+  var NoBindingError: any;
+  var AbstractBindingError: any;
+  var AsyncBindingError: any;
+  var CyclicDependencyError: any;
+  var InstantiationError: any;
+  var InvalidBindingError: any;
+  var NoAnnotationError: any;
+  var OpaqueToken: any;
+  var ___esModule: any;
+  var InjectAnnotation: any;
+  var InjectPromiseAnnotation: any;
+  var InjectLazyAnnotation: any;
+  var OptionalAnnotation: any;
+  var InjectableAnnotation: any;
+  var DependencyAnnotation: any;
+  var Inject: any;
+  var InjectPromise: any;
+  var InjectLazy: any;
+  var Optional: any;
+  var Injectable: any;
+}
+
+declare module "angular2/router" {
+  var Router: any;
+  var RouterOutlet: any;
+  var RouterLink: any;
+  var RouteParams: any;
+  var routerInjectables: any;
+  var RouteConfigAnnotation: any;
+  var RouteConfig: any;
+}
